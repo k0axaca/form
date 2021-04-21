@@ -1,0 +1,456 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.header {
+    font-weight: 600;
+}
+
+.subheader {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 1.45rem;
+    line-height: 1.4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+.button-container {
+    margin-top: -3rem;
+}
+
+.pay-button {
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.45rem;
+    font-weight: 400;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0rem 0.5rem 0rem 0rem rgba(0, 0, 0, 0.3);
+    color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.pay-button:hover {
+    background-color: hsl(248, 32%, 59%);
+}
+
+.anchor, .anchor:active, .anchor:hover {
+    text-decoration: none !important;
+    color: white;
+}
+
+.form-container {
+    height: 24.5rem;
+}
+
+.form {
+    margin-top: 1rem;
+    height: 23rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.5rem 0rem 0rem rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.form input {
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1rem;
+}
+
+::placeholder {
+    color: grey !important;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+}
+
+.valid-feedback {
+    text-align: end;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-bottom: -1.8rem;
+}
+
+.invalid-feedback {
+    text-align: end;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-bottom: -1.8rem;
+    font-style: italic;
+}
+
+.submit {
+    margin-top: 2rem;
+    width: 15rem;
+    box-shadow: 0rem 0.3rem 0rem 0rem rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+}
+
+.submit:hover {
+    background-color: hsl(154, 59%, 71%);
+    color: white;
+}
+
+.subform {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.form-link {
+    color: hsl(0, 100%, 74%);
+}
+
+footer {
+    border: 3px solid black;
+    width: 80%;
+    height: 3rem;
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 280px) {
+    .pay-button {
+        font-size: 0.7rem;
+    }
+
+    .form input {
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    .submit {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -2.5rem;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -2.8rem;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -4rem;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -4rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -4.4rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -6rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -8rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .valid-feedback, .invalid-feedback {
+        margin-left: -13.7rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(images/bg-intro-desktop.png) !important;
+    }
+    
+    .header-container {
+        width: 50%;
+        margin-top: 10rem !important;
+    }
+
+    .header {
+        font-size: 3rem;
+    }
+
+    .subheader {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 2.5rem;
+    }
+
+    .form-section {
+        width: 50%;
+        height: 37rem;
+        margin-left: 30rem;
+        margin-top: -31rem;
+    }
+
+    .pay-button {
+        height: 3rem;
+    }
+
+    .form {
+        height: 29rem;
+        margin-top: -1rem;
+    }
+
+    .form input {
+        width: 25rem;
+        margin-top: 2rem;
+        position: relative;
+        top: 2rem;
+    }
+
+    .submit {
+        margin-top: 4rem;
+        width: 25rem;
+        height: 3rem;
+    }
+
+    .subform {
+        margin-top: 1rem;
+    }
+
+    .valid-feedback, .invalid-feedback {
+        margin-top: 2.5rem;
+        margin-bottom: -3.4rem;
+        margin-left: -2.3rem;
+    }
+
+    footer {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .subheader {
+        margin-left: 6.5rem;
+    }
+
+    .form-section {
+        margin-left: 37rem;
+    }
+
+    .valid-feedback, .invalid-feedback {
+        margin-left: -6rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        margin-left: 1.7rem;
+        margin-top: 6rem;
+    }
+
+    .subheader {
+        margin-left: 9rem;
+    }
+
+    .form-section {
+        margin-left: 43rem;
+    }
+
+    .form {
+        height: 34rem;
+        margin-top: -0.2rem;
+        width: 33rem;
+    }
+
+    .pay-button {
+        margin-top: -3rem;
+        width: 33rem;
+        height: 4rem;
+    }
+
+    .form input {
+        top: 2.5rem;
+        width: 85%;
+        height: 3.3rem;
+        margin-top: 2.2rem;
+    }
+
+    .invalid-feedback, .valid-feedback {
+        position: relative;
+        top: 0.5rem;
+        margin-left: -2.5rem;
+    }
+
+    .submit {
+        margin-top: 5rem;
+        width: 85%;
+    }
+
+    .subform {
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        margin-top: 2rem;
+        font-weight: 700;
+        font-size: 3.2rem;
+        position: relative;
+        left: -2.5rem;
+    }
+
+    .subheader {
+        margin-left: 6rem;
+    }
+
+    .form-section {
+        margin-left: 44rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .header {
+        font-size: 6.5rem;
+        margin-top: 13.5rem;
+        margin-left: 4rem;
+    }
+
+    .subheader {
+        font-size: 2rem;
+        margin-top: 3.5rem;
+        line-height: 2.7rem;
+    }
+
+    .form-section {
+        margin-left: 76rem;
+        height: 74rem;
+        margin-top: -55rem;
+    }
+
+    .pay-button {
+        width: 60rem;
+        height: 6.5rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0rem 1rem 0rem 0rem rgba(0, 0, 0, 0.2);
+    }
+
+    .form {
+        width: 60rem;
+        height: 66rem;
+        box-shadow: 0rem 1rem 0rem 0rem rgba(0, 0, 0, 0.2);
+        border-radius: 1rem;
+    }
+
+    .form input {
+        top: 5rem;
+        height: 6.5rem;
+        border-radius: 1.5rem;
+        font-size: 2.7rem;
+        margin-top: 5rem;
+    }
+
+    ::placeholder {
+        font-size: 2.2rem;
+    }
+
+    input:focus, .form-control:valid, .form-control:invalid {
+        border-width: 0.3rem !important;
+    }
+
+    .submit {
+        margin-top: 9rem;
+        height: 5rem;
+        border-radius: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .subform {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .valid-feedback, .invalid-feedback {
+        font-size: 1.7rem;
+        margin-top: 6rem;
+        margin-bottom: -7.5rem;
+        margin-left: -5rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+        font-size: 2rem;
+        padding: 2rem;
+        border-width: 0.4rem;
+        width: 50%;
+    }
+}
